@@ -50,6 +50,18 @@ input[type="text"] {
   border-bottom: 2px solid #999999;
 }
 
+select {
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  padding: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #999999;
+}
+
 input[type="button"] {
   font-weight: 600;
   cursor: pointer;
@@ -87,12 +99,12 @@ input[type="submit"] {
   transition: 0.4s;
 }
 
-input[type="button"]:hover {
-  background: #d1d1d1;
+input[type="submit"]:hover {
+  background: #0072cf;
 }
 
-input[type="button"]:active {
-  background: #b1b1b1;
+input[type="submit"]:active {
+  background: #005eac;
 }
 
 input[type="button"]:hover {
