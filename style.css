@@ -137,6 +137,25 @@ input[type="text"]:focus {
           align-items: center;
 }
 
+.row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row h1 {
+  color: #2e378d;
+  font-size: 2rem;
+  margin-top: 2%;
+  margin-left: 20px;
+}
+
 h4, h2 {
   color: white;
 }
