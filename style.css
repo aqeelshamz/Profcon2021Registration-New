@@ -137,20 +137,37 @@ input[type="text"]:focus {
           align-items: center;
 }
 
+.margintop {
+  margin-top: 2%;
+}
+
 .row {
+  display: none;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 45%;
+  position: fixed;
+  background: #008cff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+
+.row img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 
 .row h1 {
-  color: #2e378d;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  color: #008cff;
   font-size: 2rem;
   margin-top: 2%;
   margin-left: 20px;
@@ -163,6 +180,17 @@ h4, h2 {
 @media only screen and (max-width: 900px) {
   .right {
     display: none;
+  }
+  .margintop {
+    margin-top: 20%;
+  }
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
   }
   .left {
     width: 100%;
