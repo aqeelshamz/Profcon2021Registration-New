@@ -125,26 +125,25 @@ input[type="text"]:focus {
 }
 
 .row{
-    display: none;
     padding-top: 2%;
     padding-bottom: 2%;
     top: 0;
     left: 0;
     z-index: 1000;
     width: 45%;
-    position: fixed;
-    background: #008cff;
+    position: relative;
+    background: white;
     justify-content: center;
     align-items: center;
     img{
+        display: none;
         filter: brightness(0) invert(1);
     }
     h1{
-        filter: brightness(0) invert(1);
-        color: #008cff;
+        color: rgb(17, 17, 43);
         font-size: 2rem;
         margin-top: 2%;
-        margin-left: 20px;
+        margin-left: 0px;
     }
 }
 
@@ -162,6 +161,16 @@ h4, h2{
     }
 
     .row{
+        background: #008cff;
+        position: fixed;
+        h1{
+            font-size: 1.5rem;
+            margin-left: 20px;
+            color: white;
+        }
+        img{
+            display: block;
+        }
         display: flex;
         padding-top: 5%;
     padding-bottom: 5%;
